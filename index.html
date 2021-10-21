@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-dark">
+<div class="container mt-2 text-muted">
+<section class="top d-flex justify-content-md-between flex-md-row flex-column align-items-center">
+
+
+<div class="d-flex flex-md-row flex-column align-items-center">
+  <div class="col">
+
+   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg>
+  </div>
+  <div class="col-auto ms-1">
+    020-800-456-747
+  </div>
+  <div class="mx-3 vr d-md-block d-none"></div>
+  <div class="col-auto">
+    Free shipping on orders over $300
+  </div>
+</div>
+
+<div class="d-flex align-items-center">
+  <div class="col-auto order-md-first order-last">
+    <div class="dropdown me-1">
+      <button type="button" class="btn dropdown-toggle text-muted id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,10">
+        English
+      </button>
+      <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuOffset">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-auto ">
+    <div class="dropdown me-1">
+      <button type="button" class="btn dropdown-toggle text-muted id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,10">
+        USD
+      </button>
+      <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuOffset">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="nike.png" height="24px" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto text-uppercase mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shop</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Template
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">contact</a>
+        </li>
+      </ul>
+
+
+
+
+
+      <div class="d-flex align-items-center justify-content-between">
+<div class="me-3">
+
+<!-- Button trigger modal -->
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+ <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg>
+
+</button>
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="modal-header">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="container">
+<div class="row align-items-center justify-content-center" style="height: 550px;">
+<div class="col-md-8">
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <button class="input-group-text" type="submit" id="basic-addon2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+</div>
+<div class="me-3">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+</svg>
+</div>
+<div class="me-3">
+  <div class="position-relative">
+<!-- Default dropstart button -->
+<div class="btn-group dropstart">
+  <button type="button" class="btn " data-bs-toggle="dropdown" aria-expanded="false">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>
+<small class="px-2 position-absolute top-25 left-75 translate-middle text-warning py-1 bg-danger border border-light rounded-circle">3</small>
+  </button>
+  <ul class="dropdown-menu drop1 shadow mt-2">
+<li>
+  <a href="#" class="dropdown-item">
+    <div class="row text-md-start text-center align-items-center justify-content-md-between justify-content-center">
+<div class="col-md-5">
+  <img src="list1.jpeg" class="img-fluid" alt="">
+</div>
+<div class="col-md-6 mt-md-0 mt-4">
+  <small class="fw-bolder">
+    Skill Tee
+  </small>
+  <div class="w-100"></div>
+  <small class="text-muted">
+    Quantity: 1
+  </small>
+  <div class="w-100"></div>
+  <small class="fw-bolder">
+    $75.00
+  </small>
+</div>
+    </div>
+  </a>
+</li>
+<li>
+  <hr class="dropdown-divider">
+</li>
+<li>
+  <a href="#" class="dropdown-item">
+    <div class="row text-md-start text-center align-items-center justify-content-md-between justify-content-center">
+<div class="col-md-5">
+  <img src="list2.jpeg" class="img-fluid" alt="">
+</div>
+<div class="col-md-6 mt-md-0 mt-4">
+  <small class="fw-bolder">
+    Skill Tee
+  </small>
+  <div class="w-100"></div>
+  <small class="text-muted">
+    Quantity: 1
+  </small>
+  <div class="w-100"></div>
+  <small class="fw-bolder">
+    $75.00
+  </small>
+</div>
+    </div>
+  </a>
+</li>
+<li>
+  <hr class="dropdown-divider">
+</li>
+<li>
+  <a href="#" class="dropdown-item">
+    <div class="row text-md-start text-center align-items-center justify-content-md-between justify-content-center">
+<div class="col-md-5">
+  <img src="list3.jpeg" class="img-fluid" alt="">
+</div>
+<div class="col-md-6 mt-md-0 mt-4">
+  <small class="fw-bolder">
+    Skill Tee
+  </small>
+  <div class="w-100"></div>
+  <small class="text-muted">
+    Quantity: 1
+  </small>
+  <div class="w-100"></div>
+  <small class="fw-bolder">
+    $75.00
+  </small>
+</div>
+    </div>
+  </a>
+</li>
+<li>
+  <hr class="dropdown-divider">
+</li>
+<li>
+  <a href="#" class="dropdown-item d-sm-flex justify-content-between">
+    <small class="text-muted lead mb-sm-0 mb-3 text-uppercase" >
+      Total
+    </small>
+    <p class="fw-bolder">$75.00</p>
+  </a>
+</li>
+<li>
+  <hr class="dropdown-divider">
+</li>
+
+
+<li class="mt-3">
+  <div class="dropdown-item d-flex align-items-center flex-md-row flex-column justify-content-between">
+<small class="fs-6 mt-0 text-muted text-uppercase mb-md-0 mb-4">
+  <a href="#" class="text-muted fs-6 ">View cart</a>
+</small>
+<div>
+  <a href="#" class="fw-bolder btn btn-outline-dark rounded-0 px-5">
+    $75.00
+  </a>
+</div>
+
+  </div>
+</li>
+  </ul>
+</div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!--Carousel-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators d-md-none text-center">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active bg-light">
+<div class="container">
+  <div class="row align-items-center text-md-start text-center" style="height: 500px;">
+  <div class="col-md-6">
+    <p class="lead text-danger fw-bolder" style="letter-spacing: 7px;">
+SPECIAL
+    </p>
+    <h1>Ethnic blouses</h1>
+    <p class="lead">
+      Lorem ipsum dolor sit.  <br>  amet consectetur adipisicing elit.
+    </p>
+    <a href="#" class="btn btn-outline-dark rounded-0 px-5 py-2 text-uppercase">
+      View collection
+    </a>
+  </div>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item bg-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-md-end text-md-start text-center" style="height: 500px;">
+        <div class="col-md-6">
+          <p class="lead text-info fw-bolder" style="letter-spacing: 7px;">
+      SPECIAL
+          </p>
+          <h1>Ethnic blouses</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit.  <br>  amet consectetur adipisicing elit.
+          </p>
+          <a href="#" class="btn btn-outline-dark rounded-0 px-5 py-2 text-uppercase">
+            View collection
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item bg-light">
+      <div class="container">
+        <div class="row align-items-center text-md-start text-center" style="height: 500px;">
+        <div class="col-md-6">
+          <p class="lead text-secondary fw-bolder" style="letter-spacing: 7px;">
+      SPECIAL
+          </p>
+          <h1>Ethnic blouses</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit.  <br>  amet consectetur adipisicing elit.
+          </p>
+          <a href="#" class="btn btn-outline-dark rounded-0 px-5 py-2 text-uppercase">
+            View collection
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon position-absolute start-0" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon position-absolute end-0" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Products-->
+<section class="products mt-5">
+  <div class="container pt-md-0 pt-5">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-6">
+        <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Show Prices</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Hide Prices</a>
+    </div>
+      </div>
+    </div>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+        <div class="row mt-5">
+          <div class="col-md-3 col-6 mb-md-0 mb-4">
+            <div class="card shadow">
+              <img src="product1.jpeg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Winter Clothes
+                </h5>
+                <p class="card-text">$84</p>
+                <a href="#" class="btn btn-danger rounded-0 w-100">Product Page</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-3 col-6 mb-md-0 mb-4">
+            <div class="card shadow">
+              <img src="product1.jpeg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Winter Clothes
+                </h5>
+                <p class="card-text">$84</p>
+                <a href="#" class="btn btn-danger rounded-0 w-100">Product Page</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-md-3 col-6 mb-md-0 mb-4">
+            <div class="card shadow">
+              <img src="product1.jpeg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Winter Clothes
+                </h5>
+                <p class="card-text">$84</p>
+                <a href="#" class="btn btn-danger rounded-0 w-100">Product Page</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-md-3 col-6 mb-md-0 mb-4">
+            <div class="card shadow">
+              <img src="product1.jpeg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Winter Clothes
+                </h5>
+                <p class="card-text">$84</p>
+                <a href="#" class="btn btn-danger rounded-0 w-100">Product Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+        <div class="row mt-5">
+          <div class="col-md-3 col-6 mb-md-0 mb-4">
+            <div class="card shadow ">
+              <img src="product1.jpeg" class="card-img-top placeholder" alt="">
+              <div class="card-body ">
+                <h5 class="card-title placeholder">
+                  Winter Clothes
+                </h5>
+                <p class="card-text placeholder">$84</p>
+                <a href="#" class="btn btn-danger rounded-0 w-100">Product Page</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-3 col-6 mb-md-0 mb-4">
+            <div class="card shadow ">
+              <img src="product1.jpeg" class="card-img-top placeholder" alt="">
+              <div class="card-body ">
+                <h5 class="card-title placeholder">
+                  Winter Clothes
+                </h5>
+                <p class="card-text placeholder">$84</p>
+                <a href="#" class="btn btn-danger rounded-0 w-100">Product Page</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-3 col-6 mb-md-0 mb-4">
+            <div class="card shadow ">
+              <img src="product1.jpeg" class="card-img-top placeholder" alt="">
+              <div class="card-body ">
+                <h5 class="card-title placeholder">
+                  Winter Clothes
+                </h5>
+                <p class="card-text placeholder">$84</p>
+                <a href="#" class="btn btn-danger rounded-0 w-100">Product Page</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-3 col-6 mb-md-0 mb-4">
+            <div class="card shadow ">
+              <img src="product1.jpeg" class="card-img-top placeholder" alt="">
+              <div class="card-body ">
+                <h5 class="card-title placeholder">
+                  Winter Clothes
+                </h5>
+                <p class="card-text placeholder">$84</p>
+                <a href="#" class="btn btn-danger rounded-0 w-100">Product Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--Sale section-->
+
+<section class="sale text-white text-center bg-danger my-5">
+  <div class="container">
+    <div class="row py-5 align-items-center">
+      <div class="col-md-6">
+<h1 class="fs-1 fw-light" style="letter-spacing: 5px;">
+FINAL SALES</h1>
+<small>Up to</small>
+<h1 class="display-1 fw-bolder my-3">
+  70%
+</h1>
+<small class="mb-5">* Free shipping on orders over $70.</small> <br>
+<a href="#" class="btn btn-outline-light text-uppercase mt-4 px-5 py-2 rounded-0">
+  Shop now
+</a>
+      </div>
+      <div class="col-md-6 d-md-block d-none">
+<img src="sale-circle.jpeg" style="max-height: 500px;" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!--Why Us-->
+<section class="whyus">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-11 shadow-lg pt-5 rounded-3" id="why">
+        <div class="row p-4">
+          <div class="col-md-4 mb-4 col-6">
+            <span class="rounded-circle p-4 shadow bg-white">
+
+   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart text-danger" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>
+            </span>
+            <br>
+            <h3 class="mt-4">
+              Quality
+            </h3>
+            <p class="text-muted">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 col-6">
+            <span class="rounded-circle p-4 shadow bg-white">
+
+   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart text-danger" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>
+            </span>
+            <br>
+            <h3 class="mt-4">
+              Quality
+            </h3>
+            <p class="text-muted">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 col-6">
+            <span class="rounded-circle p-4 shadow bg-white">
+
+   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart text-danger" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>
+            </span>
+            <br>
+            <h3 class="mt-4">
+              Quality
+            </h3>
+            <p class="text-muted">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 col-6">
+            <span class="rounded-circle p-4 shadow bg-white">
+
+   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart text-danger" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>
+            </span>
+            <br>
+            <h3 class="mt-4">
+              Quality
+            </h3>
+            <p class="text-muted">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 col-6">
+            <span class="rounded-circle p-4 shadow bg-white">
+
+   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart text-danger" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>
+            </span>
+            <br>
+            <h3 class="mt-4">
+              Quality
+            </h3>
+            <p class="text-muted">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 col-6">
+            <span class="rounded-circle p-4 shadow bg-white">
+
+   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart text-danger" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>
+            </span>
+            <br>
+            <h3 class="mt-4">
+              Quality
+            </h3>
+            <p class="text-muted">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Contact form-->
+<section class="bottom mt-5 pt-5">
+<div class="container text-white">
+  <div class="text-center">
+    <h1 class="display-1 fw-bolder">
+      Made With Love
+    </h1>
+    <p class="fs-2 text-uppercase">For All of Us</p>
+  </div>
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltipUsername" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+        <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+        <div class="invalid-tooltip">
+          Please choose a unique and valid username.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip03" class="form-label">City</label>
+      <input type="text" class="form-control" id="validationTooltip03" required>
+      <div class="invalid-tooltip">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip04" class="form-label">State</label>
+      <select class="form-select" id="validationTooltip04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-tooltip">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip05" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="validationTooltip05" required>
+      <div class="invalid-tooltip">
+        Please provide a valid zip.
+      </div>
+    </div>
+    <div class="col-12 my-4">
+      <button class="btn btn-success w-100" type="submit">Submit form</button>
+    </div>
+  </form>
+</div>
+</section>
+
+
+
+
+
+
+
+
+<!--Footer-->
+<footer class="bg-light pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <p class="fs-5">
+          E-commerce store
+        </p>
+        <small class="text-muted">
+          Lorem ipsum dolor sit amet, consectetur adipisicing.
+        </small>
+      </div>
+      <div class="col-md-2 mt-md-0 mt-4">
+<p class="fs-6 text-uppercase">Shop</p>
+<ul class="list-unstyled">
+  <li>
+    <a href="#" class="text-muted text-decoration-none small">For Women</a>
+  </li>
+  <li>
+    <a href="#" class="text-muted text-decoration-none small">For Women</a>
+  </li>
+  <li>
+    <a href="#" class="text-muted text-decoration-none small">For Women</a>
+  </li>
+</ul>
+      </div>
+      <div class="col-md-2 mt-md-0 mt-4">
+        <p class="fs-6 text-uppercase">Shop</p>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" class="text-muted text-decoration-none small">For Women</a>
+          </li>
+          <li>
+            <a href="#" class="text-muted text-decoration-none small">For Women</a>
+          </li>
+          <li>
+            <a href="#" class="text-muted text-decoration-none small">For Women</a>
+          </li>
+        </ul>
+</div>
+
+
+<div class="col-md-4">
+<p class="fs-5">
+  E-commerce store
+</p>
+<small class="text-muted">
+  Lorem ipsum dolor sit amet, consectetur adipisicing.
+</small>
+<div class="input-group my-4">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+</div>
+
+
+    </div>
+  </div>
+
+
+
+
+  <!--Copyright-->
+  <div class="bg-dark py-5">
+    <div class="container d-flex flex-md-row flex-column text-white justify-content-between">
+      <div>
+        <p class="lead">
+          &copy; Sep 2021 Your Company. All rights reserved
+        </p>
+      </div>
+      <div class="d-flex">
+        <img src="visa.svg" height="35px" class="me-3" alt="">
+        <img src="mastercard.svg" height="35px" class="me-3" alt="">
+        <img src="paypal.svg" height="35px" class="me-3" alt="">
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+  </script>
+</body>
+</html>

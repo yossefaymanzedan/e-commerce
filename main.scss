@@ -1,0 +1,14 @@
+$dropdown-padding-x:                0px;
+$dropdown-padding-y:                1rem;
+$dropdown-border-color:          transparent;
+$dropdown-divider-margin-y:         0px;
+
+.drop1 {
+    width: 400px;
+}
+@media (max-width: 767.98px) {
+    .drop1 {
+        width: 75vw;
+    }
+}
+@import "node_modules/bootstrap/scss/bootstrap";
